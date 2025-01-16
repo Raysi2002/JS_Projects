@@ -1,1 +1,0 @@
-A folder planned to be filled with the Projects made using vanilla JS
