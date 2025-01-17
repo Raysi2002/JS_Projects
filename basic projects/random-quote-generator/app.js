@@ -116,8 +116,8 @@ const generate = document.getElementById("submit");
 const content = document.getElementById("content");
 
 function generateRandomBackgroundColor(){
-    let randomColorIndex = Math.floor(Math.random() * colors.length);
-    document.body.style.backgroundColor = `${colors[randomColorIndex]}`;
+    let randomColorIndex = Math.floor(Math.random() * (colors.length));
+    document.body.style.backgroundColor = colors[randomColorIndex];
 }
 
 generate.addEventListener("click", (e) => {
