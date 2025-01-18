@@ -29,7 +29,7 @@ function resetTime(){
     startTime = 0;
     elapsedTime = 0;
     isRunning = false;
-    display.textContent = `00 : 00 : 00 : 0000`
+    display.textContent = `00h : 00m : 00s : 0000ms`
 }
 
 function updateDisplay(){
@@ -45,7 +45,7 @@ function updateDisplay(){
     minutes = String(minutes).padStart(2, '0');
     seconds = String(seconds).padStart(2, '0');
     ms = String(ms).padStart(4, '0');
-    display.textContent = `${hours} : ${minutes} : ${seconds} : ${ms}`
+    display.textContent = `${hours}h : ${minutes}m : ${seconds}s : ${ms}ms`
 }
 
 start.addEventListener('click', (e) => {
