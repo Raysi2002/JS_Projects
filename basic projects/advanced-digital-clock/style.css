@@ -15,14 +15,13 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     padding: 30px;
 }
 
 #hours, #seconds, #minutes{
     height: 10rem;
     width: 10rem;
-    border-radius: 50%;
     background-color: orange;
     display: flex;
     flex-direction: column;
@@ -31,6 +30,16 @@ body{
     font-size: 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: black;
+    margin-left: 1rem;
+}
+#hours{
+    border-radius: 76% 24% 36% 64% / 52% 70% 30% 48% ;
+}
+#seconds{
+    border-radius: 76% 24% 92% 8% / 26% 33% 67% 74% ;
+}
+#minutes{
+    border-radius: 92% 8% 92% 8% / 39% 58% 42% 61%;
 }
 .ap{
     margin-top: 10px;
@@ -41,12 +50,12 @@ body{
     background-color: aqua;
     height: 5rem;
     width: 5rem;
-    border-radius: 50%;
+    border-radius: 100% 0% 51% 49% / 73% 26% 74% 27% ;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: fixed;
-    left: 93%;
-    bottom: 55%;
-    transform: translate(-50%, -50%);
+    transform: translate(0%, -50%);
+    margin: 1rem;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
 }
