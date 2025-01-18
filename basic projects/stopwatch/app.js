@@ -11,7 +11,7 @@ let isRunning = false;
 function startTimex(){
     if(!isRunning){
         startTime = Date.now() - elapsedTime;
-        timer = setInterval(updateDisplay, 10);
+        timer = setInterval(updateDisplay, 1);
         isRunning = true;
     }
 }
