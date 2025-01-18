@@ -7,9 +7,12 @@ setInterval(time, 1000);
 
 function time(){
     const now = new Date();
-    const currentHours = now.getHours() % 12 || 12;
-    const currentMinutes = now.getMinutes();
-    const currentSeconds = now.getSeconds();
+    let currentHours = now.getHours() % 12 || 12;
+    let currentMinutes = now.getMinutes();
+    let currentSeconds = now.getSeconds();
+    currentHours = String(currentHours).padStart(2, "0");
+    currentMinutes = String(currentMinutes).padStart(2, "0");
+    currentSeconds = String(currentSeconds).padStart(2, "0");
     hours.innerHTML = `${currentHours}
             <span class="ap">hours</span>`;
     minutes.innerHTML = `${currentMinutes}
