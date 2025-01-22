@@ -1,27 +1,28 @@
-const taskInput = document.getElementById("task-input");
-const addTaskBtn = document.getElementById("add-todo");
+const textInput = document.getElementById("task-input");
+const addBtn = document.getElementById("add-btn");
 const taskList = document.getElementById("task-list");
 
 function addTask(){
-    const taskText = taskInput.value.trim();
-    if (taskText === ""){
-        alert("Please add task");
+    const text = textInput.value.trim();
+    if(text === ""){
+        alert("Please add tast");
+        return;
     }
-
     const li = document.createElement("li");
     const deleteBtn = document.createElement("button");
-    deleteBtn.textContent = "Delete"
+    deleteBtn.textContent = "Delete";
     const span = document.createElement("span");
-    span.textContent = taskText;
+    span.textContent = text;
     li.appendChild(span);
-    li.appendChild(deleteBtn)
+    li.appendChild(deleteBtn);
     taskList.appendChild(li);
-    taskInput.value = "";
-    deleteBtn.addEventListener("click", (e) => {
+    textInput.value = "";
+    deleteBtn.addEventListener('click', e => {
         taskList.removeChild(li);
     })
+
 }
 
-addTaskBtn.addEventListener("click", e => {
+addBtn.addEventListener("click", (e) => {
     addTask();
 })
