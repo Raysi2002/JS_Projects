@@ -1,4 +1,37 @@
-body{
-    margin: 0px;
-    padding: 0px;
-}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  #todo-app {
+    max-width: 400px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  #task-list {
+    list-style: none;
+    padding: 0;
+  }
+  #task-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #f9f9f9;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+  #task-list li button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  #task-list li button:hover {
+    background: darkred;
+  }
