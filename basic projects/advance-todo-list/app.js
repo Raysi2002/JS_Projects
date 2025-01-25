@@ -1,28 +1,32 @@
-const textInput = document.getElementById("task-input");
-const addBtn = document.getElementById("add-btn");
-const taskList = document.getElementById("task-list");
+const taskList = document.getElementById("taskList");
+let taskInput = document.getElementById("task-input");
+const addTaskBtn = document.getElementById("addTaskBtn");
 
 function addTask(){
-    const text = textInput.value.trim();
-    if(text === ""){
-        alert("Please add tast");
+    const taskText = taskInput.value.trim();
+    if(taskText === ""){
+        alert("Please add task");
         return;
     }
     const li = document.createElement("li");
-    const deleteBtn = document.createElement("button");
-    deleteBtn.textContent = "Delete";
     const span = document.createElement("span");
-    span.textContent = text;
+    span.textContent = taskText;
+    const deleteBtn = document.createElement('button');
+    deleteBtn.textContent = 'Delete';
     li.appendChild(span);
     li.appendChild(deleteBtn);
     taskList.appendChild(li);
-    textInput.value = "";
-    deleteBtn.addEventListener('click', e => {
+    taskInput.value = "";
+    deleteBtn.addEventListener('click', (e) => {
         taskList.removeChild(li);
     })
-
 }
 
-addBtn.addEventListener("click", (e) => {
+addTaskBtn.addEventListener('click', (e) => {
     addTask();
+})
+taskInput.addEventListener('keypress', e => {
+    if(e.key === 'Enter'){
+        addTask();
+    }
 })
