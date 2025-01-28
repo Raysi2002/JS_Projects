@@ -6,7 +6,7 @@ body{
     background-color: rgba(0, 0, 0, 0.899);
 }
 .box{
-    background-color: aliceblue;
+    background-color: rgba(240, 248, 255, 0.681);
     height: auto;
     max-width: 80%;
     position: absolute;
@@ -38,11 +38,18 @@ body{
 #input{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
-/* #city{
-    height: 2rem;
+#city, #search{
+    height: 3rem;
+    border-radius: 1rem;
+    border: 1px transparent;
+    background-color: #cde;
 }
-#search{
-
-} */
+#city:hover{
+    background-color: rgba(0, 255, 255, 0.747);
+}
+#search:hover{
+    background-color: blue;
+    color: white;
+}
