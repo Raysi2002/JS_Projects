@@ -1,6 +1,7 @@
 const apiKey = `8a66ceb846ec064f73cf62fa240272c3`;
 const searchBtn = document.getElementById(`search`);
 const cityName = document.getElementById('city-display');
+const keyCity = document.getElementById(`city`);
 
 const weatherTemp = document.getElementById(`temp`);
 const weatherHumidity = document.getElementById(`humidity`);
@@ -20,8 +21,9 @@ async function getWeather(){
 }
 
 searchBtn.addEventListener(`click`, getWeather);
-searchBtn.addEventListener(`keypress`, (e) => {
-    e.preventDefault();
-    if(e.key === `Enter`)
+keyCity.addEventListener(`keypress`, (e) => {
+    if(e.key === 'Enter'){
+        e.preventDefault();
         getWeather();
+    }
 })
