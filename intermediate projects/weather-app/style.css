@@ -3,7 +3,7 @@
 }
 
 body{
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.899);
 }
 .box{
     background-color: aliceblue;
@@ -16,6 +16,7 @@ body{
     opacity: 10pc;
     border-radius: 1rem;
     padding: 1.4rem;
+    box-shadow: 10px 10px 10px 10px transparent;
 }
 
 #details{
@@ -33,3 +34,15 @@ body{
 #city{
     text-align: center;
 }
+
+#input{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* #city{
+    height: 2rem;
+}
+#search{
+
+} */
