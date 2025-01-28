@@ -26,7 +26,7 @@ body{
     justify-content: center;
 }
 
-#temp-celcius, #hum, #wind{
+#temp, #hum, #wind{
     font-size: 30px;
     font-weight: 100;
 

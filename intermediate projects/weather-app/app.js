@@ -18,7 +18,10 @@ async function cityWeather() {
             alert("No response returned");
         }
         const weatherDetails = await response.json();
-        
+        cityDisplay.textContent = city;
+        temp.textContent = weatherDetails.main.temp;
+        wind.textContent = weatherDetails.wind.speed;
+        humidity.textContent = weatherDetails.main.humidity;
     }catch(error){
         console.error(error);
     }

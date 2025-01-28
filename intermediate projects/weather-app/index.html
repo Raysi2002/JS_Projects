@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="box">
-        <header id="city">
+        <header id="city-name">
             <h1>Weather Of <span id="city-display">City</span></h1>
         </header>
         <div id="input">
@@ -18,9 +18,9 @@
         </div>
         <div id="container">
             <div id="details">
-                <span id="temp">Temperature: <span id="temp-celcius">22°C</span></span>
-                <span id="humidity"> Humidity: <span id="hum">95%</span></span>
-                <span id="wind-flow">Wind Flow: <span id="wind">14 km/h</span></span
+                <span >Temperature: <span id="temp">22</span>°C</span>
+                <span> Humidity: <span id="humidity">95</span>%</span>
+                <span>Wind Flow: <span id="wind">14</span>km/h</span
             </div>
         </div>
     </div>
