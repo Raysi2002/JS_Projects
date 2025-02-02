@@ -12,40 +12,39 @@
         <h1>Calculator App</h1>
     </header>
     <div class="container">
-        <form action="" id="calculator">
-            <div class="input-area">
-                <input type="number" placeholder="Enter Number">
-            </div>
-            <div class="first-row">
-                <input type="button" value="C">
-                <input type="button" value="DEL">
-                <input type="button" value="%">
-                <input type="button" value="/">
-            </div>
-            <div class="first-row">
-                <input type="button" value="7">
-                <input type="button" value="8">
-                <input type="button" value="9">
-                <input type="button" value="*">
-            </div>
-            <div class="first-row">
-                <input type="button" value="4">
-                <input type="button" value="5">
-                <input type="button" value="6">
-                <input type="button" value="-">
-            </div>
-            <div class="first-row">
-                <input type="button" value="1">
-                <input type="button" value="2">
-                <input type="button" value="3">
-                <input type="button" value="+">
-            </div>
-            <div class="first-row">
-                <input type="button" value="0" id="zero">
-                <input type="button" value=".">
-                <input type="button" value="=">
-            </div>
-        </form>
+        <div id="input">
+            <input type="number" placeholder="Enter Equation">
+        </div>
+        <div id="first-row">
+            <input onclick="clearScreen()" type="button" value="C">
+            <input  type="button" value="DEL">
+            <input type="button" value="">
+            <input  onclick="appendToInput(0)"type="button" value="/">
+        </div>
+        <div id="second-row">
+            <input onclick="appendToInput(0)" type="button" value="7">
+            <input onclick="appendToInput(0)" type="button" value="8">
+            <input onclick="appendToInput(0)" type="button" value="9">
+            <input onclick="appendToInput(0)" type="button" value="*">
+        </div>
+        <div id="third-row">
+            <input onclick="appendToInput(0)" type="button" value="4">
+            <input onclick="appendToInput(0)" type="button" value="5">
+            <input onclick="appendToInput(0)" type="button" value="6">
+            <input onclick="appendToInput(0)" type="button" value="-">
+        </div>
+        <div id="fourth-row">
+            <input onclick="appendToInput(0)" type="button" value="1">
+            <input onclick="appendToInput(0)" type="button" value="2">
+            <input onclick="appendToInput(0)" type="button" value="3">
+            <input onclick="appendToInput(0)" type="button" value="+">
+        </div>
+        <div id="fifth-row">
+            <input onclick="appendToInput(0)" type="button" value="0">
+            <input onclick="appendToInput(0)" type="button" value="00">
+            <input onclick="appendToInput(0)" type="button" value=".">
+            <input onclick="evaluteEqn()" type="button" value="=">
+        </div>
     </div>
 </body>
 </html>
