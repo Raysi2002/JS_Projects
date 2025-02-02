@@ -13,36 +13,36 @@
     </header>
     <div class="container">
         <div id="input">
-            <input type="number" placeholder="Enter Equation">
+            <input id="equation" type="text" placeholder="Enter Equation">
         </div>
         <div id="first-row">
             <input onclick="clearScreen()" type="button" value="C">
-            <input  type="button" value="DEL">
+            <input onclick="deleteLast()" type="button" value="DEL">
             <input type="button" value="">
-            <input  onclick="appendToInput(0)"type="button" value="/">
+            <input  onclick="appendToInput('/')"type="button" value="/">
         </div>
         <div id="second-row">
-            <input onclick="appendToInput(0)" type="button" value="7">
-            <input onclick="appendToInput(0)" type="button" value="8">
-            <input onclick="appendToInput(0)" type="button" value="9">
-            <input onclick="appendToInput(0)" type="button" value="*">
+            <input onclick="appendToInput(7)" type="button" value="7">
+            <input onclick="appendToInput(8)" type="button" value="8">
+            <input onclick="appendToInput(9)" type="button" value="9">
+            <input onclick="appendToInput('*')" type="button" value="*">
         </div>
         <div id="third-row">
-            <input onclick="appendToInput(0)" type="button" value="4">
-            <input onclick="appendToInput(0)" type="button" value="5">
-            <input onclick="appendToInput(0)" type="button" value="6">
-            <input onclick="appendToInput(0)" type="button" value="-">
+            <input onclick="appendToInput(4)" type="button" value="4">
+            <input onclick="appendToInput(5)" type="button" value="5">
+            <input onclick="appendToInput(6)" type="button" value="6">
+            <input onclick="appendToInput('-')" type="button" value="-">
         </div>
         <div id="fourth-row">
-            <input onclick="appendToInput(0)" type="button" value="1">
-            <input onclick="appendToInput(0)" type="button" value="2">
-            <input onclick="appendToInput(0)" type="button" value="3">
-            <input onclick="appendToInput(0)" type="button" value="+">
+            <input onclick="appendToInput(1)" type="button" value="1">
+            <input onclick="appendToInput(2)" type="button" value="2">
+            <input onclick="appendToInput(3)" type="button" value="3">
+            <input onclick="appendToInput('+')" type="button" value="+">
         </div>
         <div id="fifth-row">
             <input onclick="appendToInput(0)" type="button" value="0">
-            <input onclick="appendToInput(0)" type="button" value="00">
-            <input onclick="appendToInput(0)" type="button" value=".">
+            <input onclick="appendToInput('00')" type="button" value="00">
+            <input onclick="appendToInput('.')" type="button" value=".">
             <input onclick="evaluteEqn()" type="button" value="=">
         </div>
     </div>
