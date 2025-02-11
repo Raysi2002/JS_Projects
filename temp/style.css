@@ -1,0 +1,914 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000; /* Ensures it stays above other elements */
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+#nav{
+    height: 40px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+}
+    #nav1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 40%;
+        position: absolute;
+        background-color: white;
+
+    }
+
+    #nav1 h3{
+        font-size: 27px;
+        color: rgb(125, 58, 58);
+        font-family: sans-serif;
+        gap: 20px;
+        padding: 10px;
+    }
+    #nav-2{
+        height: 50px;
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color:  rgb(255, 247, 247);
+   position: relative;
+    }
+   #nav-2 #nav2-part1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 39%;
+        position: absolute;
+        top: 20%;
+        background-color:  white;
+    }
+
+   #nav-2 #nav2-part1 h5{
+        font-size: 20px;
+        color: rgb(125, 58, 58) ;
+        font-family: sans-serif;
+        gap: 20px;
+         
+    }
+
+    #nav-2 #nav2-part2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 265%;
+        position: absolute;
+        top: 5%;
+        background-color:  white;
+    }
+
+   #nav-2 #nav2-part2 h5{
+        font-size: 12px;
+        color: rgb(57, 39, 28);
+        font-family: sans-serif;
+      
+    }
+     #nav3 {
+       
+        height: 170px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+       
+    }
+     #nav3 #img1 img {
+        width: 160px;
+        height: 140px;
+        left:5%;
+        position: absolute;
+        top: 13%;
+        border-radius: 50%;
+    }
+
+    #nav3 #button1{
+        padding: 14px 200px ;
+    border-radius: 20%;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(199, 206, 227);
+    background-color: rgb(227, 235, 241);
+    margin-top: 27px;
+    border: none;
+        position: absolute;
+        top: 38%;
+        left: 35%;
+        border: 2px solid rgb(135, 56, 56);
+        border-radius: 20px;
+    }
+    #nav3 #button1 h5 {
+color: rgb(20, 25, 25);
+font-size: 20px;
+gap: 27px;
+position: absolute;
+        top: 5%;
+        left: 5%;
+    }
+    #nav3 #button1  i{
+       
+       
+         position: absolute;
+         top: 10%;
+         left: 270%;
+         height: 30px;
+         width: 20px;
+        
+     }
+    #nav3 #button2{
+   padding: 8px 50px ;
+    border-radius: 00px;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(199, 206, 227);
+    background-color: rgb(223, 235, 243);
+    margin-top: 27px;
+    
+        position: absolute;
+        top: 40%;
+        left: 86%;  
+    }   
+    #nav3 #button2  #instagram i{
+        
+       color: rgb(145, 24, 135);
+        position: absolute;
+        top: 10%;
+        left: 15%;
+        height: 60px;
+        width: 30px;
+       
+    }
+    #nav3 #button2  #whatapp i{
+        
+        color: rgb(64, 206, 140);
+         position: absolute;
+         top: 10%;
+         left: 75%;
+         height: 60px;
+         width: 30px;
+        
+     }
+
+    #nav3 #button2  #facebook i{
+        
+        color: rgb(19, 45, 94);
+         position: absolute;
+         top: 10%;
+         left: 50%;
+         height: 60px;
+         width: 30px;
+        
+     }
+    #nav4 {
+         height: 50px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(133, 71, 90);
+
+    gap: 100px;
+
+        }
+
+#nav4 h3{
+    color: aliceblue;
+    font-size: 20px;
+}
+#page1{
+    height: 80%;
+    width: 100%;
+    background-image: url("https://i.pinimg.com/736x/fa/c7/48/fac74859b78fd62bbf4d6de8c5ccf3ac.jpg");
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+}
+#page1 #heading2 h1  {
+color: rgb(94, 31, 31);
+font-size: 70px;
+padding: 10px;
+position: relative;
+top: 12%;
+left: 5%;
+}
+#page1 #heading2 h5  {
+    color: 2px solid rgb(63, 27, 27);
+    font-size: 25px;
+    padding: 10px;
+    position: relative;
+    top: 12%;
+    left: 5%;
+    }
+    #page1 #button11 button{
+        padding: 8px 50px ;
+        border-radius: 00px;
+        font-size: 24px;
+        font-weight: 600;
+        color: rgb(228, 232, 242);
+        background-color: rgb(103, 42, 42);
+        margin-top: 27px;
+        border-radius: 0%;
+        border: none;
+            position: absolute;
+            top: 85%;
+            left: 6%;  
+            border: 2px solid rgb(59, 35, 35);
+    }  
+#page2{
+    height: 170%;
+    width: 100%;  
+    background-color: white; 
+   position: relative;
+
+}
+#page2 #heading1 h1{
+    font-size: 39px;
+    color:  rgb(158, 90, 50);
+    font-family: sans-serif;
+    gap: 20px;
+    padding: 10px;  
+    top: 2%;
+    left: 38%;
+    position: absolute;
+}
+
+
+#cart {
+    height: 100%;
+    width: 100%;
+    padding: 100px;
+
+
+}
+.container {
+    height: 300px;
+    width: 300px;
+background-color: white;
+display:inline-block ;
+justify-content: space-around;
+align-items: center;
+    margin: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+   border-radius: 15px;
+   margin-bottom: 30px;
+   padding-right: 30px;
+
+}
+.container img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
+#page3{
+    height: 55%;
+    width: 100%;  
+    background-color: rgb(201, 201, 201); 
+   position: relative;
+
+}
+#page3 #heading3 h1{
+    font-size: 39px;
+    color: rgb(150, 80, 80);
+    font-family: sans-serif;
+    gap: 20px;
+    padding: 10px;  
+    top: 2%;
+    left: 35%;
+    position: absolute;
+}
+
+ 
+
+#birth{
+    height: 120px;
+    width: 160px;
+    position:absolute;
+    top:30% ;
+    left: 5%;
+    background-color: white;
+}
+#text1{
+    position:absolute;
+    top:55% ;
+    left: 15%;    
+}
+#text1 h2{
+    font-size: 17px;
+    color: black;
+
+}
+#icons {
+    position:absolute;
+    top:34% ;
+    left: 43%;
+    height: 30px;
+width: 20px;   
+}
+#icons i{
+    color: brown;
+height: 30px;
+width: 20px;
+}
+#anniversary{
+    height: 120px;
+    width: 160px;
+    position:absolute;
+    top:30% ;
+    left: 20%;
+    background-color: rgb(253, 251, 249);
+}
+#text2{
+    position:absolute;
+    top:55% ;
+    left: 14%;    
+}
+#text2 h2{
+    font-size: 17px;
+    color: black;
+
+}
+#icons2  {
+    position:absolute;
+    top:34% ;
+    left: 43%;
+    height: 30px;
+width: 20px;   
+}
+#icons2 i{
+    color: brown;
+height: 30px;
+width: 20px;
+}
+#customised{
+    height: 120px;
+    width: 160px;
+    position:absolute;
+    top: 30% ;
+    left: 35%;
+    background-color: rgb(255, 252, 247);
+}
+#text3{
+    position:absolute;
+    top:55% ;
+    left: 14%;    
+}
+#text3 h2{
+    font-size: 17px;
+    color: black;
+
+}
+#icons3 {
+    position:absolute;
+    top:34% ;
+    left: 43%;
+    height: 30px;
+width: 20px;   
+}
+#icons3 i{
+    color: brown;
+height: 30px;
+width: 20px;
+}
+#handcrafted{
+    height: 120px;
+    width: 160px;
+    position:absolute;
+    top:30% ;
+    left: 50%;
+    background-color: rgb(245, 245, 245);
+}
+#text4{
+    position:absolute;
+    top:55% ;
+    left: 13%;    
+}
+#text4 h2{
+    font-size: 17px;
+    color: black;
+
+}
+#icons4 {
+    position:absolute;
+    top:34% ;
+    left: 43%;
+    height: 30px;
+width: 20px;   
+}
+#icons4 i{
+    color: brown;
+height: 30px;
+width: 20px;
+}
+#special{
+    height: 120px;
+    width: 160px;
+    position:absolute;
+    top:30% ;
+    left: 65%;
+    background-color: rgb(249, 249, 249);
+}
+#text5{
+    position:absolute;
+    top:55% ;
+    left: 14%;    
+}
+#text5 h2{
+    font-size: 17px;
+    color: black;
+
+}
+#icons5 {
+    position:absolute;
+    top:34% ;
+    left: 43%;
+    height: 30px;
+width: 20px;   
+}
+#icons5 i{
+    color: brown;
+height: 30px;
+width: 20px;
+}
+#corporated{
+    height: 120px;
+    width: 160px;
+    position:absolute;
+    top:30% ;
+    left: 80%;
+    background-color: hsl(0, 0%, 100%);
+}
+#text6{
+    position:absolute;
+    top:55% ;
+    left: 14%;    
+}
+#text6 h2{
+    font-size: 17px;
+    color: black;
+
+}
+#icons6 {
+    position:absolute;
+    top:34% ;
+    left: 43%;
+    height: 30px;
+width: 20px;   
+}
+#icons6 i{
+    color: brown;
+height: 30px;
+width: 20px;
+}
+#page4{
+    height: 240%;
+    width: 100%;  
+    background-color: rgb(243, 239, 237); 
+   position: relative;
+
+}
+#page4 #heading4 h1{
+    font-size: 39px;
+    color: rgb(33, 28, 28);
+    font-family: sans-serif;
+    gap: 20px;
+    padding: 10px;  
+    top: 0%;
+    left: 35%;
+    position: absolute;
+}
+
+#fifthy {
+    height: 100%;
+    width: 100%;
+    padding: 100px;
+
+
+}
+.fifth {
+
+    height: 230px;
+    width: 230px;
+background-color: white;
+display:inline-block ;
+justify-content: space-around;
+align-items: center;
+    margin: 10px;
+    overflow: hidden;
+    margin-top: 50px;
+   border-radius: 20px;
+   padding-right: 85px;
+ padding-bottom: 100px;
+ margin-bottom: 100px;
+   margin-right: 85px;
+}
+.fifth img{
+    height: 230px;
+    width: 230px;
+    object-fit: cover;
+}
+#cover{
+    height: 100%;
+    width: 100%;
+background: linear-gradient (transparent,rgb(15, 8, 1));
+position: absolute;
+
+
+}
+#cover h2{
+    color: black;
+    font-size: 20px;
+    font-family: sans-serif;
+top: 0%;
+left: 0%;
+position: absolute;
+}
+#cover h5{
+    color: black;
+    font-size: 17px;
+    font-family: sans-serif; 
+    top: 2%;
+left: 0%;
+position: absolute; 
+}
+#cover h4{
+    color: black;
+    font-size: 14px;
+    font-family: sans-serif; 
+    top: 4%;
+left: 0%;
+position: absolute;    
+}
+
+
+#page5{
+    height: 30%;
+    width: 100%;  
+    background-color: rgb(220, 220, 220); 
+   position: relative;
+
+}
+#page5 #heading5 h1{
+    font-size: 39px;
+    color: rgb(33, 28, 28);
+    font-family: sans-serif;
+    gap: 20px;
+    padding: 10px;  
+    top: 2%;
+    left: 35%;
+    position: absolute;
+}
+#six{
+    height: 100%;
+    width: 100%;
+    padding: 140px;
+
+
+}
+.sixth{
+
+    height: 230px;
+    width: 230px;
+background-color: white;
+display:inline-block ;
+justify-content: space-around;
+align-items: center;
+    margin: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+   border-radius: 20px;
+   margin-bottom: 90px;
+   padding-right: 40px;
+   margin-right: 40px;
+padding-bottom: 90px;
+margin-bottom: 110px;
+   border-bottom-width: 20px;
+
+}
+.sixth img{
+    height: 230px;
+    width: 230px;
+    object-fit: cover;
+}
+
+#page6{
+    height: 80%;
+    width: 100%;  
+    background-color: rgb(215, 224, 237); 
+   position: relative;
+
+}
+#page6 #heading6 h1{
+    font-size: 39px;
+    color: rgb(33, 28, 28);
+    font-family: sans-serif;
+    gap: 20px;
+    padding: 10px;  
+    top: 2%;
+    left: 35%;
+    position: absolute;
+}   
+
+
+
+#seven{
+    height: 120%;
+    width: 100%;
+    padding: 140px;
+
+
+}
+.seventh{
+
+    height: 180px;
+    width: 350px;
+background-color: white;
+display:inline-block ;
+justify-content: space-around;
+align-items: center;
+    margin: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+   border-radius: 0%;
+   margin-bottom: 90px;
+   padding-right: 40px;
+   margin-right: 40px;
+padding-bottom: 90px;
+margin-bottom: 110px;
+   border-bottom-width: 20px;
+
+}
+.seventh img{
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+   
+    border-radius: 50%;
+}
+#coverseven{
+    height: 100%;
+    width: 100%;
+background: linear-gradient (transparent,rgb(15, 8, 1));
+position: relative;
+
+}
+#coverseven h1{
+    color: rgb(7, 6, 6);
+    font-size: 20px;
+    font-family: sans-serif;
+top: -60%;
+left: 40%;
+position: absolute;
+}
+
+ #coverseven p{
+    color: rgb(77, 77, 75); 
+    padding: 4px;
+    border-radius: 5px;
+    top: 20%;
+left: 8%;
+position: absolute;
+font-size: 20px;
+ }
+ 
+#footer{
+    height: 80%;
+    width: 100%;
+    background-color: black;
+    position: relative;
+}
+  #footer #logos img {
+    height: 120px;
+    width: 110px;
+    top: 10%;
+    left: 5%;
+    position: absolute;
+    border-radius: 50%;
+}
+
+#footer #heading{
+    top: 20%;
+    left: 15%;
+    position: absolute;
+}
+#footer #heading h2{
+    font-size: 29px;
+    color: rgb(243, 233, 233);
+    font-family: sans-serif;
+}
+
+#footer #heading1{
+    top: 55%;
+    left: 7%;
+    position: absolute;
+}
+#footer #heading1 p{
+    font-size: 19px;
+    color: rgb(243, 233, 233);
+    font-family: sans-serif;
+}
+
+#footer #heading2{
+    top: 20%;
+    left: 38%;
+    position: absolute;
+}
+#footer #heading2 h1{
+    font-size: 24px;
+    color: rgb(243, 233, 233);
+    font-family: sans-serif;
+}
+#footer #heading3{
+    top: 33%;
+    left: 38%;
+    position: absolute;
+}
+#footer #heading3 h1{
+    font-size: 15px;
+    color: rgb(243, 233, 233);
+    font-family: sans-serif;
+}
+#footer #heading4{
+    top: 47%;
+    left: 38%;
+    position: absolute;
+}
+#footer #heading4 h1{
+    font-size: 15px;
+    color: rgb(243, 233, 233);
+    font-family: sans-serif;
+}
+#footer #heading5{
+    top: 61%;
+    left: 38%;
+    position: absolute;
+}
+#footer #heading5 h1{
+    font-size: 15px;
+    color: rgb(243, 233, 233);
+    font-family: sans-serif;
+}
+#footer #heading6{
+    top: 77%;
+    left: 39%;
+    position: absolute;
+}
+
+#footer #heading6 h1{
+    font-size: 15px;
+    color: rgb(243, 233, 233);
+    font-family: sans-serif;
+}
+
+#footer #heading12{
+    top: 20%;
+    left: 58%;
+    position: absolute;
+}
+#footer #heading12 h1{
+    font-size: 24px;
+    color: rgb(243, 233, 233);
+    font-family: sans-serif;
+}
+#footer #heading13{
+    top: 33%;
+    left: 58%;
+    position: absolute;
+}
+#footer #heading13 h1{
+    font-size: 15px;
+    color: rgb(243, 233, 233);
+    font-family: sans-serif;
+}
+#footer #heading14{
+    top: 47%;
+    left: 58%;
+    position: absolute;
+}
+#footer #heading14 h1{
+    font-size: 15px;
+    color: rgb(243, 233, 233);
+    font-family: sans-serif;
+}
+#footer #heading15{
+    top: 61%;
+    left: 58%;
+    position: absolute;
+}
+#footer #heading15 h1{
+    font-size: 15px;
+    color: rgb(243, 233, 233);
+    font-family: sans-serif;
+}
+#footer #heading16{
+    top: 77%;
+    left: 58%;
+    position: absolute;
+}
+
+#footer #heading16 h1{
+    font-size: 15px;
+    color: rgb(243, 233, 233);
+    font-family: sans-serif;
+}
+
+
+#footer #heading22{
+    top: 20%;
+    left: 78%;
+    position: absolute;
+}
+#footer #heading22 h1{
+    font-size: 24px;
+    color: rgb(243, 233, 233);
+    font-family: sans-serif;
+}
+#footer #heading23{
+    top: 33%;
+    left: 78%;
+    position: absolute;
+}
+#footer #heading23 h1{
+    font-size: 15px;
+    color: rgb(243, 233, 233);
+    font-family: sans-serif;
+}
+#footer #heading24{
+    top: 47%;
+    left: 78%;
+    position: absolute;
+}
+#footer #heading24 h1{
+    font-size: 15px;
+    color: rgb(243, 233, 233);
+    font-family: sans-serif;
+}
+#footer #heading25{
+    top: 61%;
+    left: 78%;
+    position: absolute;
+}
+#footer #heading25 h1{
+    font-size: 15px;
+    color: rgb(243, 233, 233);
+    font-family: sans-serif;
+}
+#footer #heading26{
+    top: 77%;
+    left: 78%;
+    position: absolute;
+}
+
+#footer #heading26 h1{
+    font-size: 15px;
+    color: rgb(243, 233, 233);
+    font-family: sans-serif;
+}
+#footer #headinglast{
+    top: 90%;
+    left: 45%;
+    position: absolute;
+}
+#footer #headinglast h1{
+    font-size: 15px;
+    color: rgb(243, 233, 233);
+    font-family: sans-serif;
+}
